@@ -1,0 +1,63 @@
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+* {
+  box-sizing: border-box;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 16px;
+}
+
+body {
+  text-align: center;
+}
+.large-title {
+  font-size: 80px;
+}
+.subtext {
+  font-size: 30px;
+}
+.rounded-separator {
+  width: 100%;
+  max-width: 800px;
+  padding: 0 48px;
+  margin: 0 auto;
+}
+.rounded-separator div {
+  height: 10px;
+  background-color: black;
+  border-radius: 5px;
+}
+.mountains {
+  position: relative;
+  width: 200px;
+  height: 160px;
+  margin: 0 auto;
+}
+.mountains div {
+  position: relative;
+  display: inline-block;
+  border-width: 0 60px 160px 60px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+.mountains div:after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: -50px;
+  border-width: 0 50px 140px 50px;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
+}
+.mountains div.mount-2 {
+  margin: 0 0 0 -50px;
+}
+
+/*for the page height*/
+@media screen and (min-height:500px) {
+  footer {
+    position: fixed;
+    bottom: 16px;
+    left: 0;
+    width: 100%;
+
+  }
+}
